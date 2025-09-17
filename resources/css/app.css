@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "flowbite/src/themes/default";
+@source "../node_modules/flowbite-datepicker";
+
+/* Preline UI */
+@import "../../node_modules/preline/variants.css";
+@source "../../node_modules/preline/dist/*.js";
+
+[x-cloak] {
+    display: none;
+}
