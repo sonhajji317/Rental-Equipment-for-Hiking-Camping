@@ -7,6 +7,11 @@ use Livewire\Component;
 
 class Hero extends Component
 {
+    public function placeholder()
+    {
+        return view('livewire.skeleton');
+    }
+
     public function render()
     {
         $products = Product::with('category')

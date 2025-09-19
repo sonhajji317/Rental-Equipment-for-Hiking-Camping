@@ -37,7 +37,7 @@
             <div class="flex items-center justify-end mt-4">
 
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    <a class="underline text-sm text-[#133E87] hover:text-red-500 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#133E87]"
                         href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
@@ -45,7 +45,7 @@
 
                 @if (Route::has('register'))
                     <a href="{{ route('register') }}"
-                        class="ms-4 inline-flex items-center px-4 py-2 bg-gray-200 border border-transparent rounded-md font-semibold text-xs text-gray-700 uppercase tracking-widest hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150">
+                        class="ms-4 inline-flex items-center px-4 py-2 bg-[#CBDCEB] border hover:bg-[#608BC1] hover:text-[#F3F3E0] border-transparent rounded-md font-semibold text-xs text-[#133E87] uppercase tracking-widest focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#133E87] transition ease-in-out duration-150">
                         {{ __('Register') }}
                     </a>
                 @endif

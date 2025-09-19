@@ -5,7 +5,7 @@
                 class="block rounded-lg p-4 shadow-sm hover:shadow-lg shadow-indigo-100 bg-[#F3F3E0]">
                 <img alt=""
                     src="{{ $product->image ? asset('storage/' . $product->image) : asset('storage/placeholder-image.png') }}"
-                    class="h-56 w-full rounded-md object-cover" data-aos-duration="1500" data-aos="zoom-out-up" />
+                    class="h-56 w-full rounded-md object-cover" data-aos="fade-up" data-aos-duration="1500" />
 
                 <div class="mt-2 px-4">
                     <dl>

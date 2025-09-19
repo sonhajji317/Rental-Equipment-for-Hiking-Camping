@@ -16,15 +16,14 @@
 
 <body>
     @livewire('front.header')
-    <livewire:front.main lazy />
-    {{-- @livewire('front.main') --}}
-    @livewire('front.footer')
-    @livewireScripts
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <livewire:front.main lazy>
+        @livewire('front.footer')
+        @livewireScripts
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>

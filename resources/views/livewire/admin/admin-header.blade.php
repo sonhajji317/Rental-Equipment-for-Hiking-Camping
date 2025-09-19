@@ -2,23 +2,29 @@
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
             <div class="flex-1 md:flex md:items-center md:gap-12">
-                <a wire:navigate class="block text-teal-600" href="/">
-                    <span class="sr-only">Home</span>
+                <a wire:navigate.hover href="/productList" class="flex items-center gap-2">
+                    <img src="{{ asset('storage/camp&hike.png') }}"
+                        class="w-12 h-12 md:w-14 md:h-14 object-contain rounded" alt="Logo">
                 </a>
             </div>
 
             <div class="md:flex md:items-center md:gap-12">
                 <nav aria-label="Global" class="hidden md:block">
                     <ul class="flex items-center gap-6 text-sm">
-                        <li>
+                        {{-- <li>
                             <a wire:navigate.hover class="text-[#F3F3E0] transition hover:text-[#CBDCEB]"
                                 href="/admin">
                                 Dashboard </a>
-                        </li>
+                        </li> --}}
                         <li>
                             <a wire:navigate.hover class="text-[#F3F3E0] transition hover:text-[#CBDCEB]"
                                 href="/productList">
                                 Product </a>
+                        </li>
+                        <li>
+                            <a wire:navigate.hover class="text-[#F3F3E0] transition hover:text-[#CBDCEB] "
+                                href="/categoryList">
+                                Category </a>
                         </li>
                         <li>
                             @guest
@@ -38,10 +44,6 @@
                                     </a>
                                 @endif
                             @endguest
-                        </li>
-                        <li>
-                            <a class="text-[#F3F3E0] transition hover:text-[#CBDCEB] " href="/categoryList">
-                                Category </a>
                         </li>
                     </ul>
                 </nav>

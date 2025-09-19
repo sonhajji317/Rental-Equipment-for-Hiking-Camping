@@ -1,4 +1,4 @@
-<div class="bg-white shadow-md rounded-lg p-6 min-h-screen">
+<div class="bg-[#CBDCEB] shadow-md rounded-lg p-6 min-h-screen">
     <h2 class="text-2xl font-bold mb-6 text-gray-800">🛒 Cart List</h2>
 
     <div class="overflow-x-auto rounded-lg border border-gray-200">
@@ -14,9 +14,9 @@
                     <th class="py-3 px-4 border-b text-center">Actions</th>
                 </tr>
             </thead>
-            <tbody class="divide-y divide-gray-200">
+            <tbody class="text-sm">
                 @forelse ($cartItems as $index => $item)
-                    <tr class="hover:bg-gray-50 transition">
+                    <tr class="{{ $loop->odd ? 'bg-white' : 'bg-gray-50' }} hover:bg-blue-50 transition">
                         <td class="py-3 px-4 font-medium text-gray-900">{{ $item['name'] }}</td>
                         <td class="py-3 px-4">
                             <input type="date"
@@ -48,9 +48,10 @@
                     </tr>
                 @empty
                     <tr>
-                        <td colspan="7" class="py-6 px-4 text-center text-gray-500">
+                        <td colspan="7" class="py-6 px-4 text-center text-gray-500 bg-white">
                             Your cart is empty.
                         </td>
+                    </tr>
                 @endforelse
             </tbody>
         </table>

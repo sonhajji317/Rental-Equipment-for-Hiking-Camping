@@ -22,8 +22,8 @@ class Create extends Component
             'description' => 'nullable|string',
             'stock' => 'required|integer|min:1',
             'status' => 'required|in:available,rented',
-            'start_rent' => 'required|date|after_or_equal:today',
-            'end_rent' => 'required|date|after:start_rent',
+            // 'start_rent' => 'required|date|after_or_equal:today',
+            // 'end_rent' => 'required|date|after:start_rent',
             'image' => 'nullable|image|max:2048',
         ]);
 
@@ -39,8 +39,8 @@ class Create extends Component
             'description' => $this->description,
             'stock' => $this->stock,
             'status' => $this->status,
-            'start_rent' => $this->start_rent,
-            'end_rent' => $this->end_rent,
+            // 'start_rent' => $this->start_rent,
+            // 'end_rent' => $this->end_rent,
             'image' => $path
         ]);
 

@@ -18,6 +18,8 @@
 
 <body>
     @livewire('front.header')
+    {{-- <livewire:front.hero lazy>
+        <livewire:front.main lazy> --}}
     {{ $slot }}
     @livewire('front.footer')
     @livewireScripts

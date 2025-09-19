@@ -18,8 +18,8 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->bigInteger('price');
             $table->integer('stock')->default(0);
-            $table->date('start_rent');
-            $table->date('end_rent');
+            $table->date('start_rent')->default(today());
+            $table->date('end_rent')->default(today()->addDays(1));
             $table->enum('status', ['available', 'rented'])->default('available');
             $table->string('image')->nullable();
             $table->timestamps();

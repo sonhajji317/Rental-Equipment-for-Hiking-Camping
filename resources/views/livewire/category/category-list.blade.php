@@ -1,4 +1,5 @@
-<div class="min-h-screen py-8 px-4">
+<div class="min-h-screen py-8 px-4 bg-[#CBDCEB]">
+    <h1 class="text-center text-2xl font-bold mb-4">Category List</h1>
     <div class="flex justify-center">
         @if (session('message'))
             <span class="px-3 py-1 text-sm text-green-700 bg-green-100 rounded">{{ session('message') }}</span>
@@ -7,7 +8,7 @@
 
     <div class="flex justify-end mt-4 mb-4 max-w-2xl mx-auto">
         <a wire:navigate.hover href="/categoryCreate"
-            class="bg-blue-600 text-white px-3 py-1 rounded shadow hover:bg-blue-700 transition">
+            class="bg-[#133E87] text-[#F3F3E0] px-3 py-1 rounded shadow hover:bg-[#608BC1] transition">
             + Add Category
         </a>
     </div>

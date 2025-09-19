@@ -1,39 +1,13 @@
 <footer class="bg-[#CBDCEB] pt-4">
     <div class="mx-auto max-w-5xl px-4 pb-4 sm:px-6 lg:px-8">
         <div class="flex justify-center text-teal-600">
-            <img src="{{ asset('storage/logo-rent.png') }}" alt="logo" class="w-20 h-20">
+            <img src="{{ asset('storage/camp&hike.png') }}" alt="logo" class="w-24 h-24 object-cover rounded">
         </div>
 
         <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-900 font-semibold">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
-            itaque neque.
+            Bekasi’s best and most complete camping equipment rental.
         </p>
 
-        <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-            <li>
-                <a class="text-gray-900 font-semibold transition" href="#"> About </a>
-            </li>
-
-            <li>
-                <a class="text-gray-900 font-semibold transition" href="#"> Careers </a>
-            </li>
-
-            <li>
-                <a class="text-gray-900 font-semibold transition" href="#"> History </a>
-            </li>
-
-            <li>
-                <a class="text-gray-900 font-semibold transition" href="#"> Services </a>
-            </li>
-
-            <li>
-                <a class="text-gray-900 font-semibold transition" href="#"> Projects </a>
-            </li>
-
-            <li>
-                <a class="text-gray-900 font-semibold transition" href="#"> Blog </a>
-            </li>
-        </ul>
     </div>
     <div class="bg-[#133E87] w-full py-4 ">
         <ul class="flex justify-center gap-6 md:gap-8 w-full">

@@ -10,6 +10,11 @@ class Main extends Component
 {
     use WithPagination;
 
+    public function placeholder()
+    {
+        return view('livewire.skeleton');
+    }
+
     public function render()
     {
         $product1 = Product::with('category')

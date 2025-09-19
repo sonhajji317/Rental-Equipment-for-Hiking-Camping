@@ -1,4 +1,5 @@
-<div class="min-h-screen py-8 px-4">
+<div class="min-h-screen py-8 px-4 bg-[#CBDCEB]">
+    <h1 class="text-center text-2xl font-bold mb-8">Rent List</h1>
     <div class="flex justify-center mx-auto max-w-5xl">
         @session('message')
             <div class="mb-4 p-4 text-sm text-green-700 bg-green-100 rounded-lg" role="alert">

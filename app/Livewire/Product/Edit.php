@@ -22,8 +22,8 @@ class Edit extends Component
         $this->category_id = $product_details->category_id;
         $this->description = $product_details->description;
         $this->stock = $product_details->stock;
-        $this->start_rent = $product_details->start_rent;
-        $this->end_rent = $product_details->end_rent;
+        // $this->start_rent = $product_details->start_rent;
+        // $this->end_rent = $product_details->end_rent;
         $this->status = $product_details->status;
         $this->image = $product_details->image;
     }
@@ -39,8 +39,8 @@ class Edit extends Component
             'description' => 'nullable|string',
             'stock' => 'required|integer|min:0',
             'status' => 'required|in:available,rented',
-            'start_rent' => 'required|date|after_or_equal:today',
-            'end_rent' => 'required|date|after:start_rent',
+            // 'start_rent' => 'required|date|after_or_equal:today',
+            // 'end_rent' => 'required|date|after:start_rent',
         ]);
 
         //ini adalah gambar product yang sudah ada
@@ -57,8 +57,8 @@ class Edit extends Component
             'description' => $this->description,
             'stock'       => $this->stock,
             'status'      => $this->status,
-            'start_rent'  => $this->start_rent,
-            'end_rent'    => $this->end_rent,
+            // 'start_rent'  => $this->start_rent,
+            // 'end_rent'    => $this->end_rent,
             'image' => $path,
         ]);
 

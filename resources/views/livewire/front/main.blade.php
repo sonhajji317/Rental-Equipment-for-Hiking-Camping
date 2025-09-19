@@ -1,8 +1,8 @@
 <div class="bg-[#133E87]">
-    @livewire('front.hero')
+    <livewire:front.hero lazy />
     <div class="px-6 py-5 flex justify-end">
-        <a wire:navigate.hover href="/productAll"
-            class="px-2 py-1 font-bold text-sm rounded bg-[#F3F3E0] text-[#133E87] ">See
+        <a wire:navigate href="/productAll"
+            class="text-lg px-2 py-1 font-bold rounded bg-[#F3F3E0] text-[#133E87] hover:bg-[#CBDCEB]">See
             all
             product</a>
     </div>
@@ -11,7 +11,7 @@
             <div class="block rounded-lg p-4 shadow-sm hover:shadow-lg shadow-indigo-100 bg-[#F3F3E0]">
                 <img alt=""
                     src="{{ $product->image ? asset('storage/' . $product->image) : asset('storage/placeholder-image.png') }}"
-                    class="h-56 w-full rounded-md object-cover" data-aos-duration="1500" data-aos="fade-right" />
+                    class="h-56 w-full rounded-md object-cover" data-aos="fade-right" data-aos-duration="1500" />
 
                 <div class="mt-2 px-4">
                     <dl>
@@ -57,7 +57,7 @@
             <div class="block rounded-lg p-4 shadow-sm hover:shadow-lg shadow-indigo-100 bg-[#F3F3E0]">
                 <img alt=""
                     src="{{ $product->image ? asset('storage/' . $product->image) : asset('storage/placeholder-image.png') }}"
-                    class="h-56 w-full rounded-md object-cover" data-aos-duration="1500" data-aos="fade-left" />
+                    class="h-56 w-full rounded-md object-cover" data-aos="fade-left" data-aos-duration="1500" />
 
                 <div class="mt-2 px-4">
                     <dl>
@@ -103,7 +103,7 @@
             <div class="block rounded-lg p-4 shadow-sm hover:shadow-lg shadow-indigo-100 bg-[#F3F3E0]">
                 <img alt=""
                     src="{{ $product->image ? asset('storage/' . $product->image) : asset('storage/placeholder-image.png') }}"
-                    class="h-56 w-full rounded-md object-cover" data-aos-duration="1500" data-aos="fade-right" />
+                    class="h-56 w-full rounded-md object-cover" data-aos="fade-right" data-aos-duration="1500" />
 
                 <div class="mt-2 px-4">
                     <dl>

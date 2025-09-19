@@ -1,4 +1,4 @@
-<div class="min-h-screen py-8 px-4">
+<div class="min-h-screen py-8 px-4 bg-[#CBDCEB]">
     <div class="flex justify-center mb-6">
         <h1 class="text-2xl font-bold text-gray-800">Product List</h1>
     </div>
@@ -11,7 +11,7 @@
 
     <div class="flex justify-end mb-4 max-w-7xl mx-auto">
         <a wire:navigate.hover href="/productCreate"
-            class="bg-blue-600 text-white px-3 py-1 rounded shadow hover:bg-blue-700 transition">
+            class="bg-[#133E87] text-[#F3F3E0] px-3 py-1 rounded shadow hover:bg-[#608BC1] transition">
             + Add Product
         </a>
     </div>
@@ -25,8 +25,8 @@
                     <th class="px-6 py-3 border-b">Category</th>
                     <th class="px-6 py-3 border-b">Price</th>
                     <th class="px-6 py-3 border-b">Stock</th>
-                    <th class="px-6 py-3 border-b">Start Rent</th>
-                    <th class="px-6 py-3 border-b">End Rent</th>
+                    {{-- <th class="px-6 py-3 border-b">Start Rent</th>
+                    <th class="px-6 py-3 border-b">End Rent</th> --}}
                     <th class="px-6 py-3 border-b">Status</th>
                     <th class="px-6 py-3 border-b">Image</th>
                     <th class="px-6 py-3 border-b">Action</th>
@@ -40,8 +40,8 @@
                         <td class="px-6 py-3">{{ $product->category->name }}</td>
                         <td class="px-6 py-3">IDR {{ number_format($product->price, 0, ',', '.') }}</td>
                         <td class="px-6 py-3">{{ $product->stock }}</td>
-                        <td class="px-6 py-3">{{ \Carbon\Carbon::parse($product->start_rent)->format('d M Y') }}</td>
-                        <td class="px-6 py-3">{{ \Carbon\Carbon::parse($product->end_rent)->format('d M Y') }}</td>
+                        {{-- <td class="px-6 py-3">{{ \Carbon\Carbon::parse($product->start_rent)->format('d M Y') }}</td>
+                        <td class="px-6 py-3">{{ \Carbon\Carbon::parse($product->end_rent)->format('d M Y') }}</td> --}}
                         <td class="px-6 py-3">
                             <span
                                 class="px-3 py-1 rounded text-xs font-medium text-gray-100

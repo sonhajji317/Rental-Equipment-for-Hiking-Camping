@@ -20,6 +20,11 @@ class ProductAll extends Component
         $this->resetPage();
     }
 
+    public function updatingSearch()
+    {
+        $this->resetPage();
+    }
+
     public function render()
     {
         $products = Product::with('category')
@@ -35,7 +40,7 @@ class ProductAll extends Component
                 });
             })
             ->latest()
-            ->paginate(20);
+            ->paginate(15);
 
         $categories = Category::all();
 

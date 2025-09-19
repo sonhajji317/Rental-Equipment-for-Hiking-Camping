@@ -63,14 +63,14 @@
     <div class="flex justify-center mx-auto py-5 gap-3">
         <!-- Tombol "All categories" -->
         <button type="button" wire:click='setCategory(null)'
-            class="{{ is_null($selectedCategory) ? 'bg-[#133E87] text-[#F3F3E0]' : 'bg-[#F3F3E0] text-[#133E87] border border-[#133E87]' }} px-3 py-1 rounded">
+            class="{{ is_null($selectedCategory) ? 'bg-[#133E87] text-[#F3F3E0]' : 'bg-[#F3F3E0] text-[#133E87] border border-[#133E87]' }} px-3 py-1 rounded font-semibold">
             All Categories
         </button>
 
         <!-- Tombol kategori -->
         @foreach ($categories as $category)
             <button type="button" wire:click='setCategory({{ $category->id }})'
-                class="{{ $selectedCategory === $category->id ? 'bg-[#133E87] text-[#F3F3E0]' : 'bg-[#F3F3E0] text-[#133E87] border border-[#133E87]' }} px-3 py-1 rounded">
+                class="{{ $selectedCategory === $category->id ? 'bg-[#133E87] text-[#F3F3E0]' : 'bg-[#F3F3E0] text-[#133E87] border border-[#133E87]' }} px-3 py-1 rounded font-semibold">
                 {{ $category->name }}
             </button>
         @endforeach
@@ -82,7 +82,7 @@
                 class="block rounded-lg p-4 shadow-sm hover:shadow-lg shadow-indigo-100 bg-[#F3F3E0]">
                 <img alt=""
                     src="{{ $product->image ? asset('storage/' . $product->image) : asset('storage/placeholder-image.png') }}"
-                    class="h-56 w-full rounded-md object-cover" data-aos-duration="1500" data-aos="zoom-out-up" />
+                    class="h-56 w-full rounded-md object-cover" />
 
                 <div class="mt-2 px-4">
                     <dl>

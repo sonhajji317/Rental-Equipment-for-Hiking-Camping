@@ -23,7 +23,7 @@
     </section>
     <div>
         {{-- popular product --}}
-        <h1 class="text-2xl font-bold px-6 pt-3 text-end text-[#F3F3E0]">Popular Products</h1>
+        <h1 class="text-2xl font-bold px-6 pt-3 text-center text-[#F3F3E0]">Popular Products</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 px-6 mt-4">
             @forelse ($products as $product)
                 <div class="group relative overflow-hidden rounded shadow-md">
